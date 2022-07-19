@@ -55,7 +55,6 @@ function refresh(){
     tempButton.addEventListener('click', (event) => {
       let tb = event.currentTarget;
       tb.classList.add("disabled");
-      console.log(randomWord);
       if(randomWord.includes(tb.innerText)){
         tb.classList.replace("btn-primary", "btn-success");
         addLetters(tb.innerText);
