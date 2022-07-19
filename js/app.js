@@ -94,7 +94,7 @@ function stopGame(won){
   let wonMessage = "gagné :]",
   lostMessage = "perdu :{";
   
-  messageDiv.querySelector("h1").innerText = `Vous avez ${won ? wonMessage : lostMessage} !`
+  messageDiv.querySelector("h1").innerText = `Vous avez ${won ? wonMessage : lostMessage}`
   
   for(let button of alphabetButtonDiv.children){
     if(!button.classList.contains("disabled")){
